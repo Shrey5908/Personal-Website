@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * Preloader
    */
+
   const preloader = document.querySelector("#preloader");
   if (preloader) {
     window.addEventListener("load", () => {
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   }
+
   function test() {
     var tabsNewAnim = $("#navbarSupportedContent");
     var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
@@ -44,16 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
   $(document).ready(function () {
     setTimeout(function () {
       test();
     });
   });
+
   $(window).on("resize", function () {
     setTimeout(function () {
       test();
     }, 100);
   });
+
   $(".navbar-toggler").click(function () {
     $(".navbar-collapse").slideToggle(100);
     setTimeout(function () {
@@ -67,45 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     $(".contactbtn").click(function (e) {
       $("#index").load("contact.html");
-      // $('#index').replaceWith('<section id="contact"></section>');
     });
   });
 
-  // // --------------add active class-on another-page move----------
-  // jQuery(document).ready(function($){
-  //   // Get current path and find target link
-  //   var path = window.location.pathname.split("/").pop();
-
-  //   // Account for home page with empty path
-  //   if ( path == '' ) {
-  //     path = 'index.html';
-  //   }
-
-  //   var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
-  //   // Add active class to target link
-  //   target.parent().addClass('active');
-  // });
-
-  // Add active class on another page linked
-
-  // $(window).on('load',function () {
-  //     var current = location.pathname;
-  //     console.log(current);
-  //     $('#navbarSupportedContent ul li a').each(function(){
-  //         var $this = $(this);
-  //         // if the current path is like this link, make it active
-  //         if($this.attr('href').indexOf(current) !== -1){
-  //             $this.parent().addClass('active');
-  //             // $this.parents('.menu-submenu').addClass('show-dropdown');
-  //             // $this.parents('.menu-submenu').parent().addClass('active');
-  //         }else{
-  //             $this.parent().removeClass('active');
-  //         }
-  //     })
-  // });
   /**
    * Scroll top button
    */
+
   const scrollTop = document.querySelector(".scroll-top");
   if (scrollTop) {
     const togglescrollTop = function () {
@@ -126,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * Animation on scroll function and init
    */
+
   function aos_init() {
     AOS.init({
       duration: 1000,
@@ -134,7 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
       mirror: false,
     });
   }
+
   window.addEventListener("load", () => {
     aos_init();
   });
+  
 });
