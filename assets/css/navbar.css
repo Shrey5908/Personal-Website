@@ -7,9 +7,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-/* i {
-	margin-right: 10px;
-} */
+
 #nav{
 	padding: 0;
 }
@@ -126,33 +124,17 @@ body{
     left: -25px;
 }
 
-
-@media(min-width: 992px){
-	.navbar-expand-custom {
-	    -ms-flex-flow: row nowrap;
-	    flex-flow: row nowrap;
-	    -ms-flex-pack: start;
-	    justify-content: flex-start;
-	}
-	.navbar-expand-custom .navbar-nav {
-	    -ms-flex-direction: row;
-	    flex-direction: row;
-	}
-	.navbar-expand-custom .navbar-toggler {
-	    display: none;
-	}
-	.navbar-expand-custom .navbar-collapse {
-	    display: -ms-flexbox!important;
-	    display: flex!important;
-	    -ms-flex-preferred-size: auto;
-	    flex-basis: auto;
-	}
-}
-
-
 @media (max-width: 991px){
 	#navbarSupportedContent ul li a{
 		padding: 12px 30px;
+	}
+	.header-social-links{
+		margin-top: 1px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.navbar-toggler{
+		margin-bottom: 18px;
 	}
 	.hori-selector{
 		margin-top: 0px;
