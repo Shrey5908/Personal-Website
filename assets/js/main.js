@@ -70,8 +70,20 @@ document.addEventListener("DOMContentLoaded", () => {
     $(".indexbtn").click(function (e) {
       $("#index").load("indexload.html");
     });
+    $(".indexbtn").click(function (e) {
+      $("#gallery").load("certifications.html");
+    });
     $(".contactbtn").click(function (e) {
       $("#index").load("contact.html");
+    });
+    $(".contactbtn").click(function (e) {
+      $("#gallery").load("contactgallery.html");
+    });
+    $(".certificatesbtn").click(function (e) {
+      $("#index").empty();
+    });
+    $(".certificatesbtn").click(function (e) {
+      $("#gallery").load("certifications.html");
     });
   });
 

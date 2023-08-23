@@ -478,6 +478,187 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Contact Gallery Section
+--------------------------------------------------------------*/
+
+.icon-circle .fa {
+  font-size: 25px;
+  color: #e84700;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #e84700;
+  line-height: 80px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.35s;
+  -moz-transition: all ease-in-out 0.35s;
+  -o-transition: all ease-in-out 0.35s;
+  -ms-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.2s, background-color ease-in-out 0.05s;
+}
+
+.icon-circle .fa:hover {
+  background-color: #e84700;
+  color: #000;
+  border: 1px solid #e84711;
+  -moz-box-shadow: inset 0px 0px 0px 5px #000;
+  -o-box-shadow: inset 0px 0px 0px 5px #000;
+  -ms-box-shadow: inset 0px 0px 0px 5px #000;
+  -webkit-box-shadow: inset 0px 0px 0px 5px #000;
+  box-shadow: inset 0px 0px 0px 5px #000;
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+.icon-circle i:before {
+  margin-left: 0px;
+  font-size: 40px;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  #contactgallery{
+    width: 90%;
+  }
+  .icon-circle .fa {
+    font-size: 15px;
+    color: #e84700;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #e84700;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.35s;
+    -moz-transition: all ease-in-out 0.35s;
+    -o-transition: all ease-in-out 0.35s;
+    -ms-transition: all ease-in-out 0.35s;
+    transition: all ease-in-out 0.2s, background-color ease-in-out 0.05s;
+  }
+
+  .icon-circle .fa:hover {
+    background-color: #e84700;
+    color: #000;
+    border: 1px solid #e84711;
+    -moz-box-shadow: inset 0px 0px 0px 5px #000;
+    -o-box-shadow: inset 0px 0px 0px 5px #000;
+    -ms-box-shadow: inset 0px 0px 0px 5px #000;
+    -webkit-box-shadow: inset 0px 0px 0px 5px #000;
+    box-shadow: inset 0px 0px 0px 5px #000;
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+
+  .icon-circle i:before {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+}
+
+.ifacebook .fa {
+  color: #3b5998;
+  border: 2px solid #3b5998;
+}
+
+.ifacebook .fa:hover {
+  background-color: #3b5998;
+  color: #fff;
+  border: 1px solid #3b5998;
+}
+
+.itwittter .fa {
+  color: #33ccff;
+  border: 2px solid #33ccff;
+}
+
+.itwittter .fa:hover {
+  background-color: #33ccff;
+  color: #fff;
+  border: 1px solid #33ccff;
+}
+
+.igithub .fa {
+  color: #333;
+  border: 2px solid #333;
+}
+
+.igithub .fa:hover {
+  background-color: #171515;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.iinsta .fa {
+  color: #cc2366;
+  border: 2px solid #cc2366;
+}
+
+.iinsta .fa:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+  border: 1px solid #cc2366;
+}
+
+.iLinkedin .fa {
+  color: #007bb7;
+  border: 2px solid #007bb7;
+}
+
+.iLinkedin .fa:hover {
+  background-color: #007bb7;
+  color: #fff;
+  border: 1px solid #007bb7;
+}
+
+@media (min-width: 768px) and (max-width: 1040px) {
+  #contactgallery{
+    width: 100%;
+  }
+}
+@media (min-width: 100px) and (max-width: 360px) {
+  #contactgallery{
+    width: 100%;
+  }
+}
+@media (min-width: 1040px){
+  #contactgallery{
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 
