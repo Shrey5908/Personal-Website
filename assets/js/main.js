@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       $("#index").load("indexload.html");
     });
     $(".indexbtn").click(function (e) {
-      $("#gallery").load("certifications.html");
+      $("#gallery").load("indexgallery.html");
     });
     $(".contactbtn").click(function (e) {
       $("#index").load("contact.html");
