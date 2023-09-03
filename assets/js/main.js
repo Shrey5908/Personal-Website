@@ -16,7 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   }
+  /* Navbar */
+  // Autohide
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0";
+    } else {
+      document.getElementById("header").style.top = "-500px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+  
   function test() {
     var tabsNewAnim = $("#navbarSupportedContent");
     var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
@@ -108,12 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
   }
-  
+
   /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: ".glightbox",
   });
 
   /**
@@ -132,5 +145,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     aos_init();
   });
-  
 });
