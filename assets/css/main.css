@@ -21,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -520,7 +525,7 @@ h6 {
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
-  #contactgallery{
+  #contactgallery {
     width: 90%;
   }
   .icon-circle .fa {
@@ -643,17 +648,17 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1040px) {
-  #contactgallery{
+  #contactgallery {
     width: 100%;
   }
 }
 @media (min-width: 100px) and (max-width: 360px) {
-  #contactgallery{
+  #contactgallery {
     width: 100%;
   }
 }
-@media (min-width: 1040px){
-  #contactgallery{
+@media (min-width: 1040px) {
+  #contactgallery {
     width: 50%;
   }
 }
