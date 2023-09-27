@@ -123,13 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: ".glightbox",
-  });
-
-  /**
    * Animation on scroll function and init
    */
 
