@@ -44,9 +44,7 @@
     <div class="row justify-content-center mt-4">
       <div class="col-lg-9">
         <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
+          onsubmit="return false;"
           class="php-email-form"
         >
           <div class="row">
@@ -98,7 +96,7 @@
             </div>
           </div>
           <div class="text-center">
-            <button type="submit">Send Message</button>
+            <button type="submit" onclick="savedata();">Send Message</button>
           </div>
         </form>
       </div>
